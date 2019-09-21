@@ -4,6 +4,8 @@ After=network.target
 
 [Service]
 Type=simple
+LimitNOFILE=40960
+LimitNPROC=40960
 WorkingDirectory=/usr/local/shadowsocks-multiuser
 ExecStart=/usr/local/shadowsocks-multiuser/shadowsocks-multiuser -nodeid 1 -dbhost localhost -dbuser sspanel -dbpass sspanel -dbname sspanel -syncinterval 30 -udp
 Restart=always
