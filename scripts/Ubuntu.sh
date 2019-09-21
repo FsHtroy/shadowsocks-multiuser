@@ -15,7 +15,7 @@ go build -ldflags "-w -s"
 mkdir -p /usr/local/shadowsocks-multiuser
 cp shadowsocks-multiuser /usr/local/shadowsocks-multiuser
 chmod +x /usr/local/shadowsocks-multiuser/shadowsocks-multiuser
-/bin/cp -rf scripts/systemd/shadowsocks-multiuser.service /etc/systemd/system
+/bin/cp -rf scripts/systemd/shadowsocks-multiuser.service /usr/lib/systemd/system
 systemctl daemon-reload
 
 rm -rf ~/go
