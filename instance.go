@@ -4,7 +4,7 @@ import (
 	"log"
 	"net"
 
-	"github.com/NetchX/shadowsocks-multiuser/core"
+	"github.com/FsHtroy/shadowsocks-multiuser/core"
 )
 
 // Instance struct
