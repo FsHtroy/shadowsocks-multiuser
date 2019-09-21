@@ -7,15 +7,15 @@ rm go.tar.gz
 OLDPATH="$PATH"
 PATH="$PATH:/usr/local/go/bin"
 
-go get -u -v github.com/NetchX/shadowsocks-multiuser
-cd ~/go/src/github.com/NetchX/shadowsocks-multiuser
+go get -u -v github.com/FsHtroy/shadowsocks-multiuser
+cd ~/go/src/github.com/FsHtroy/shadowsocks-multiuser
 
 go build -ldflags "-w -s"
 
-mkdir -p /opt/shadowsocks-multiuser
-cp shadowsocks-multiuser /opt/shadowsocks-multiuser
-chmod +x /opt/shadowsocks-multiuser/shadowsocks-multiuser
-cp scripts/systemd/shadowsocks-multiuser.service /etc/systemd/system
+mkdir -p /usr/local/shadowsocks-multiuser
+cp shadowsocks-multiuser /usr/local/shadowsocks-multiuser
+chmod +x /usr/local/shadowsocks-multiuser/shadowsocks-multiuser
+/bin/cp -rf scripts/systemd/shadowsocks-multiuser.service /etc/systemd/system
 systemctl daemon-reload
 
 rm -rf ~/go
