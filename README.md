@@ -43,10 +43,10 @@ Usage of shadowsocks-multiuser:
         开启 UDP 转发
 ```
 
-## Ubuntu 自动安装脚本
+## Centos 自动安装脚本
 1. 运行脚本
 ```bash
-curl -fsSL https://raw.githubusercontent.com/FsHtroy/shadowsocks-multiuser/master/scripts/Ubuntu.sh | bash
+curl -fsSL https://raw.githubusercontent.com/FsHtroy/shadowsocks-multiuser/master/scripts/Centos.sh | bash
 ```
 
 2. 编辑配置文件调整参数
